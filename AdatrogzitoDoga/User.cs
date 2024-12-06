@@ -8,13 +8,6 @@ namespace AdatrogzitoDoga
 {
     internal class User
     {
-        /*string name = NameTextBox.Text;
-        int age = int.Parse(AgeTextBox.Text);
-        string email = EmailTextBox.Text;
-        string phoneNumber = PhoneNumberTextBox.Text;
-        string address = AddressTextBox.Text;
-        bool gender = GenderComboBox.SelectedIndex == 0 ? true : false;
-        string comment = CommentTextBox.Text;*/
         public string Name { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }

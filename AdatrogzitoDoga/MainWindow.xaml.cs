@@ -15,38 +15,6 @@ namespace AdatrogzitoDoga
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
-    /*Beviteli mezők és ellenőrzések az első oldalon:
-
-A felhasználónak meg kell adnia:
-Név: Kötelező, legalább 3 karakter hosszú.
-Kor: Kötelező, csak számokat fogadjon el (pozitív egész szám).
-E-mail cím: Kötelező, és legyen érvényes formátum.
-Telefonszám: Csak számokat fogadjon el, és legalább 8 karakter hosszúnak kell lennie.
-Cím: Nem lehet üres.
-Nem: ComboBox-ot használunk a választáshoz.
-Megjegyzés: Opcionális szöveg.
-Egy „Hozzáadás” gomb csak engedjen tovább, ha az összes mező helyes adatot tartalmaz.
-Adatok megjelenítése a második oldalon:
-
-Az előző oldalon bevitt adatok jelenjenek meg egy listában.
-A lista elemeit fájlba is mentjük.
-A fájl formátuma legyen például txt (pl. nev,kor,email,telefon,cim,nem,megjegyzes(opcionalis)).
-Követelmények
-Validációk az első oldalon:
-
-A gomb inaktív legyen, amíg bármelyik mező érvénytelen.
-Hibás adat esetén jelenjen meg hibaüzenet.
-Lista oldal:
-
-Listázza ki az összes bevitt adatot.
-Mentse a fájlba a megadott adatokat.
-Listaelem törlése: Ha a felhasználó rákattint egy listaelemre, az törlődik mind a ListBox-ból, mind a fájlból.
-Frissítés: A lista tartalma automatikusan frissül törlés után.
-Navigáció:
-
-Az első oldalról lehessen navigálni a lista oldalra.
-A lista oldalról lehessen visszatérni az első oldalra (új adatok felviteléhez). 
-     */
     public partial class MainWindow : Window
     {
         public MainWindow()

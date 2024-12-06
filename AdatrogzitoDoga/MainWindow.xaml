@@ -7,16 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="10">
-        <!-- Beviteli mezők és ellenőrzések az első oldalon:
-
-A felhasználónak meg kell adnia:
-Név: Kötelező, legalább 3 karakter hosszú.
-Kor: Kötelező, csak számokat fogadjon el (pozitív egész szám).
-E-mail cím: Kötelező, és legyen érvényes formátum.
-Telefonszám: Csak számokat fogadjon el, és legalább 8 karakter hosszúnak kell lennie.
-Cím: Nem lehet üres.
-Nem: ComboBox-ot használunk a választáshoz.
-Megjegyzés: Opcionális szöveg. -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>

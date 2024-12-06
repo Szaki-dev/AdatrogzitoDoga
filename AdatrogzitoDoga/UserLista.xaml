@@ -7,21 +7,6 @@
         mc:Ignorable="d"
         Title="UserLista" Height="450" Width="800">
     <Grid>
-        <!-- Követelmények
-Validációk az első oldalon:
-
-A gomb inaktív legyen, amíg bármelyik mező érvénytelen.
-Hibás adat esetén jelenjen meg hibaüzenet.
-Lista oldal:
-
-Listázza ki az összes bevitt adatot.
-Mentse a fájlba a megadott adatokat.
-Listaelem törlése: Ha a felhasználó rákattint egy listaelemre, az törlődik mind a ListBox-ból, mind a fájlból.
-Frissítés: A lista tartalma automatikusan frissül törlés után.
-Navigáció:
-
-Az első oldalról lehessen navigálni a lista oldalra.
-A lista oldalról lehessen visszatérni az első oldalra (új adatok felviteléhez). -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
