@@ -1,0 +1,57 @@
+﻿<Window x:Class="AdatrogzitoDoga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdatrogzitoDoga"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Beviteli mezők és ellenőrzések az első oldalon:
+
+A felhasználónak meg kell adnia:
+Név: Kötelező, legalább 3 karakter hosszú.
+Kor: Kötelező, csak számokat fogadjon el (pozitív egész szám).
+E-mail cím: Kötelező, és legyen érvényes formátum.
+Telefonszám: Csak számokat fogadjon el, és legalább 8 karakter hosszúnak kell lennie.
+Cím: Nem lehet üres.
+Nem: ComboBox-ot használunk a választáshoz.
+Megjegyzés: Opcionális szöveg. -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Név:" Grid.Row="0" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1" Margin="0,10,0,0"/>
+        <Label Content="Kor:" Grid.Row="1" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="AgeTextBox" Grid.Row="1" Grid.Column="1" Margin="0,10,0,0"/>
+        <Label Content="E-mail cím:" Grid.Row="2" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="EmailTextBox" Grid.Row="2" Grid.Column="1" Margin="0,10,0,0"/>
+        <Label Content="Telefonszám:" Grid.Row="3" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="PhoneNumberTextBox" Grid.Row="3" Grid.Column="1" Margin="0,10,0,0"/>
+        <Label Content="Cím:" Grid.Row="4" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="AddressTextBox" Grid.Row="4" Grid.Column="1" Margin="0,10,0,0"/>
+        <Label Content="Nem:" Grid.Row="5" Grid.Column="0" Margin="0,10,0,0"/>
+        <ComboBox x:Name="GenderComboBox" Grid.Row="5" Grid.Column="1" Margin="0,10,0,0">
+            <ComboBoxItem Content="Férfi"/>
+            <ComboBoxItem Content="Nő"/>
+        </ComboBox>
+        <Label Content="Megjegyzés:" Grid.Row="6" Grid.Column="0" Margin="0,10,0,0"/>
+        <TextBox x:Name="CommentTextBox" Grid.Row="6" Grid.Column="1" Margin="0,10,0,0"/>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Button Content="Tovább a listára" Width="200" Margin="0,10,10,0" Click="toTheList"/>
+            <Button Content="Hozzáadás" Width="200" Height="50" Margin="0,10,0,0" Click="reg"/>
+        </StackPanel>
+    </Grid>
+</Window>
